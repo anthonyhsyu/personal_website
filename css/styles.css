@@ -1,162 +1,171 @@
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	padding-top: 50px;
-	background: url(../images/disney-filtered.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 66% 30%;
-	background-attachment: fixed;
-	height: 100%;
+    padding-top: 50px;
+    background: url(../images/disney-filtered.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 66% 30%;
+    background-attachment: fixed;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
-	body:before {
-		content: "";
-		display: block;
-  		position: fixed;
-  		left: 0;
-  		top: 0;
-  		width: 100%;
-  		height: 100%;
-  		z-index: -10;
-		padding-top: 50px;
-		background: url(../images/disney-filtered-mobile.jpg) no-repeat center center;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		/*background-repeat: no-repeat;
-		background-position: 100% 30%;
-		background-attachment: scroll;*/
-	}
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        padding-top: 50px;
+        background: url(../images/disney-filtered-mobile.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        /*background-repeat: no-repeat;
+        background-position: 100% 30%;
+        background-attachment: scroll;*/
+    }
 }
 
 /*
 @media (min-width: 601px) and (max-width: 800px) {
-	body {
-		padding-top: 50px;
-		background: url(../images/disney-filtered.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 83% 30%;
-		background-attachment: fixed;
-		height: 100%;
-	}
+    body {
+        padding-top: 50px;
+        background: url(../images/disney-filtered.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 83% 30%;
+        background-attachment: fixed;
+        height: 100%;
+    }
 }
 */
 
 @font-face {
-	font-family: titleFont;
-	src: url(../fonts/ADAM.CG_PRO.otf);
+    font-family: titleFont;
+    src: url(../fonts/ADAM.CG_PRO.otf);
 }
 
 #header {
-	font-family: titleFont;
+    font-family: titleFont;
 }
 
 #logo {
-	color: #EAC733;
+    color: #EAC733;
 }
 
 /*
 .background {
-	background: url(images/disney-filtered.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center 33%;
-	background-attachment: fixed;
-	height: 100%;
-	width: 100%;
+    background: url(images/disney-filtered.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
 }
 */
 
 #large-name {
-	font-family: titleFont;
-	text-align: center;
-	color: #EAC733;
-	/*font-size: 800%;*/
-	font-size: 10vmax;
-	font-weight: bold;
-	display: none;
+    font-family: titleFont;
+    text-align: center;
+    color: #EAC733;
+    /*font-size: 800%;*/
+    font-size: 10vmax;
+    font-weight: bold;
+    display: none;
 }
 
+/*
 #construction-header {
-	font-family: titleFont;
-	text-align: center;
-	color: #EAC733;
-	font-size: 500%;
-	font-weight: bold;
+    font-family: titleFont;
+    text-align: center;
+    color: #EAC733;
+    font-size: 500%;
+    font-weight: bold;
 }
 
 #construction-text {
-	font-family: Futura;
-	text-align: center;
-	color: #EAC733;
-	font-size: 300%;
-	font-weight: bold;
+    font-family: Futura;
+    text-align: center;
+    color: #EAC733;
+    font-size: 300%;
+    font-weight: bold;
 }
+*/
 
 .large-space {
-	height: 32vh;
+    height: 32vh;
 }
 
 .small-space {
-	height: 8vh;
+    height: 8vh;
 }
 
 .subtitle {
-	font-weight: bold;
-	background: rgba(234, 199, 51, 0.6);
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	font-family: titleFont;
-	font-size: 12vmin;
-	text-align: center;
-	color: black;
-	padding-top: 30px;
-	border-top-style:solid;
-	border-top-color:black;
-	border-left-style:solid;
-	border-left-color:black;
-	border-right-style:solid;
-	border-right-color:black;
+    font-weight: bold;
+    /*background: rgba(234, 199, 51, 0.8);*/
+    background: rgba(200, 200, 200, 0.8);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: titleFont;
+    font-size: 8vmin;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    border-top-style:solid;
+    border-top-color:black;
+    border-left-style:solid;
+    border-left-color:black;
+    border-right-style:solid;
+    border-right-color:black;
 }
 
 .text-block {
-	background: rgba(234, 199, 51, 0.6);
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	font-family: Futura, Helvetica, sans-serif;
-	font-size: 2.8vmin;
-	font-weight: bold;
-	color: black;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	border-bottom-style:solid;
-	border-bottom-color:black;
-	border-left-style:solid;
-	border-left-color:black;
-	border-right-style:solid;
-	border-right-color:black;
+    /*background: rgba(234, 199, 51, 0.8);*/
+    background: rgba(200, 200, 200, 0.8);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Avenir, Helvetica, sans-serif;
+    font-size: 2.8vmin;
+    font-weight: bold;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    border-left-style:solid;
+    border-left-color:black;
+    border-right-style:solid;
+    border-right-color:black;
 }
 
 .more-text {
-	display: none;
+    display: none;
 }
 
 .text-link {
-	color: rgb(0, 5, 208);
+    color: #386690;
+}
+
+.text-link:hover {
+    color: rgb(234, 199, 51);
+    text-decoration: none;
 }
 
 section {
-	padding-top: 50px;
-	visibility: hidden;
+    padding-top: 50px;
+    visibility: hidden;
 }
 
 .row.equal {
@@ -166,59 +175,84 @@ section {
 }
 
 .slide {
-	border-width: 2px;
-	border-color: black;
-	border-style: solid;
-	padding-left: 5px;
-	padding-right: 5px;
-	height: 100%;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
 }
 
 .slide-header {
-	padding-top: 6px; /*remove if reverting back to button*/
-	text-align: center;
+    padding-top: 10px; /*remove if reverting back to button*/
+    text-align: center;
+    font-family: titleFont;
+    font-size: 4vmin;
 }
 
 .slide-content {
-	display: none;
+    display: none;
 }
 
 .slide-button {
-	width: 100%;
-	background: rgba(234, 199, 51, 0);
-	border: none; 
+    width: 100%;
+    background: rgba(234, 199, 51, 0);
+    border: none; 
 }
 
 .proj-title {
-	font-family: titleFont;
-	font-size: 8vmin;
-	font-weight: bold;
+    font-family: titleFont;
+    font-size: 6vmin;
+    font-weight: bold;
 }
 
 .proj-pic {
-	width: 90%;
+    width: 90%;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.proj-desc-wrapper {
+    padding: 30px;
+}
+
+.mid-align-wrapper {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.mid-align {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.float-img {
+    float: right;
+    padding-left: 20px;
+    width: 50%;
 }
 
 .contact {
-	background: rgba(234, 199, 51, 0);
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-	padding-left: 20px;
-	padding-right: 20px;
+    background: rgba(234, 199, 51, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
-	background: black;
-	color: white;
-	width: 100%;
-	text-align: center;
-	font-family: Futura;
-	font-size: 110%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: Avenir, Helvetica, sans-serif;
+    font-size: 110%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer-wrapper {
-	width: 100%;
+    width: 100%;
 }
