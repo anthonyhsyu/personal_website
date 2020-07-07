@@ -15,7 +15,7 @@ $(function() { /* to make sure the script runs after page load */
 });
 
 $(function() { /* to make sure the script runs after page load */
-    $('.contact').click(function(event){ /* find all a.read_more elements and bind the following code to them */
+    $('.spoiler').click(function(event){ /* find all a.read_more elements and bind the following code to them */
         event.preventDefault(); /* prevent the a from changing the url */
         $(this).parents('.text-block').find('.more-text').fadeIn(1000); /* show the .more_text span */
     });

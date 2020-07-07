@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Anthony Yu is a junior studying computer science and statistics at UC Berkeley." />
-    <meta name="keywords" content="computer science, software engineering, data science, statistics, Berkeley, undergraduate, Megafind, Hermes" />
+	<meta name="description" content="Anthony Yu is a recent grad from UC Berkeley majoring in computer science and statistics." />
+    <meta name="keywords" content="computer science, software engineering, data science, statistics, UC, Berkeley, undergraduate, Megafind, Hermes, RISELab, class of 2020" />
     <meta name="author" content="Anthony Yu" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123888770-1"></script>
@@ -28,7 +28,7 @@
     <script src="js/fade-and-slide.js"></script>
     <!--<script src="js/mobile-background-fix.js"></script>-->
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 	<title>Anthony Yu - Portfolio</title>
 </head>
 <body>
@@ -80,7 +80,7 @@
 				Finishing my undergraduate degree at Cal, I have covered a large breadth of disciplines in both computer science and statistics. Besides core ideas covered in algorithms, operating systems, and databases, I've also had a chance to learn things about machine learning and natural language processing. Now, with the theoretical knowledge down, I'm eager to apply all this knowledge to develop meaningful software and extract interesting patterns from data to produce useful solutions for our problems today.
 				<br><br>
 				GPA: 3.72 <br>
-				Relevant Coursework:
+				Relevant Coursework:<br>
 				<ul>
 					<li>CS 170: Efficient Algorithms and Intractable Problems</li>
 					<li>CS 162: Operating Systems and System Programming</li>
@@ -88,23 +88,11 @@
 					<li>CS 189: Introduction to Machine Learning</li>
 					<li>CS 188: Introduction to Artificial Intelligence</li>
 					<li>CS 168: Introduction to the Internet: Architecture and Protocols</li>
-					<li>CS 184: Introduction to Computer Graphics</li>
 					<li>INFO 159: Natural Language Processing</li>
 					<li>DATA 100: Priniciples and Techniques of Data Science</li>
 					<li>STAT 151A: Linear Modelling: Theory and Applications</li>
 					<li>STAT 153: Introduction to Time Series</li>
 					<li>STAT 155: Game Theory</li>
-					<li>STAT 133: Concepts of Computing with Data</li>
-					<li>STAT 134: Concepts of Probability</li>
-					<li>STAT 135: Concepts of Statistics</li>
-					<li>CS 61A: The Structure and Interpretation of Computer Programs</li>
-					<li>CS 61B: Data Structures</li>
-					<li>CS 61C: Great Ideas of Computer Architecture (Machine Structures)</li>
-					<li>CS 70: Discrete Math and Probability Theory</li>
-					<li>EE 16A: Designing Information Devices and Systems I</li>
-					<li>MATH 53: Multivariable Calculus</li>
-					<li>MATH 54: Linear Algebra and Differential Equations</li>
-					<li>COG SCI 1: Introduction to Cognitive Science</li>
 				</ul>
 				<br>
 				In addition to this list, I am a member of UC Berkeley's computer science honor society <a href="https://upe.cs.berkeley.edu" class="text-link" target="_blank">Upsilon Pi Epsilon (UPE)</a>, served as the head advisor (for a full year!) and as the former web development committee director (for three semesters!) for Berkeley's <a href="https://saas.berkeley.edu/" class="text-link" target="_blank">Student Association for Applied Statistics (SAAS)</a>, and been part of course staff (also three semesters!) for <a href="http://inst.eecs.berkeley.edu/~ee16a/" class="text-link" target="_blank">EE 16A</a>, Berkeley's introductory electrical engineering class.
@@ -127,8 +115,8 @@
 							Position: Undergraduate Researcher for (Ray) Tune, Formerly for Modin<br>
 							<a href="https://www.opentable.com" class="text-link" target="_blank">RISELab</a> is a UC Berkeley lab focusing on Real-time Intelligent Secure Explainable systems (how the name came to be!). I started out in <a href="https://github.com/modin-project/modin" class="text-link" target="_blank">Modin</a>, a framework designed to parallelize Pandas to handle big data much more efficiently. I only spent two months with this project, but I was able to add support for reading in JSON files that have a two-times speedup on any file 200 MB or larger. I then moved on to <a href="https://docs.ray.io/en/master/tune.html" class="text-link" target="_blank">Ray Tune</a> (or just Tune for short), where I did two larger scale projects: <br><br>
 							<ol>
-								<li>Adding support for a Bayesian optimization library <a href="https://github.com/dragonfly/dragonfly" class="text-link" target="_blank">Dragonfly</a> within Tune. This involved exposing a new API for Dragonfly itself -- an ask-tell interface to iteratively retrieve and feed in data points -- to integrate this into Tune.</li>
-								<li>Creating <a href="https://github.com/ray-project/tune-sklearn" class="text-link" target="_blank">tune-sklearn</a>: a grid search cross validation interface similar to scikit-learn's <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html" class="text-link" target="_blank">GridSearchCV</a>, but with improved back-end from Tune to add parallelism and early stopping mechanisms to speed up hyperparameter tuning. This project is able to achieve up to 10 times the speed of scikit-learn, and is also able to beat similar libraries like Dask which takes at least double the time of Tune's.</li>
+								<li>Adding support for a Bayesian optimization library <a href="https://github.com/dragonfly/dragonfly" class="text-link" target="_blank">Dragonfly</a> within Tune. This involved exposing a new API for Dragonfly itself -- an ask-tell interface to iteratively retrieve and feed in data points -- to integrate this into Tune. More documentation <a href="https://dragonfly-opt.readthedocs.io/en/master/getting_started_ask_tell/" class="text-link" target="_blank">here</a> for the curious!</li>
+								<li>Creating <a href="https://github.com/ray-project/tune-sklearn" class="text-link" target="_blank">tune-sklearn</a>: a grid search cross validation interface similar to scikit-learn's <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html" class="text-link" target="_blank">GridSearchCV</a>, but with improved back-end from Tune to add parallelism and early stopping mechanisms to speed up hyperparameter tuning. This project is able to achieve up to 10 times the speed of scikit-learn, and is also able to beat similar libraries like Dask which takes at least double the time of Tune's. Check out the <a href="https://medium.com/distributed-computing-with-ray/gridsearchcv-2-0-new-and-improved-ee56644cbabf" class="text-link" target="_blank">Medium article</a> featuring the new library!</li>
 						</div>
 					</div>
 				</div>
@@ -315,9 +303,9 @@
 				<div class="float-img">
 					<img src="images/cr-ranked1663.PNG" width="100%">
 				</div>
-				I'm not an intense gamer, but I do play Clash Royale daily (still after almost four years!). I currently hit 6300 trophies consistently, up in the "grand champion" leagues where the top few percent of players compete. I have a personal best of 6858 trophies, and managed to end that season ranked 8291st in the world at 6804 trophies! But my best ranking at any given point in time is #1663 midway into the April 2019 season, and some day I hope to beat that! I'm also currently an active <a href="https://twitch.tv/lemonayyde" class="text-link" target="_blank">Twitch streamer</a> where I share my Clash Royale gameplay at least twice a week along with other casual games from time to time, so if looking at my <a href="http://statsroyale.com/profile/JUJL09JU" class="text-link" target="_blank">Clash Royale profile</a> isn't enough for you, come say hi on my stream!
+				I'm not an intense gamer, but I do play Clash Royale daily (still after almost four years!). I currently hit 6600 trophies consistently, up in the "royal champion" leagues where the top few percent of players compete. I have a personal best of 6898 trophies, and I managed to end the May 2020 season at rank #6924! But my best ranking at any given point in time is #1663 midway into the April 2019 season, and some day I hope to beat that! I'm also currently an active <a href="https://twitch.tv/lemonayyde" class="text-link" target="_blank">Twitch streamer</a> where I share my Clash Royale gameplay at least twice a week along with other casual games from time to time, so if looking at my <a href="http://statsroyale.com/profile/JUJL09JU" class="text-link" target="_blank">Clash Royale profile</a> isn't enough for you, come say hi on my stream!
 				<br><br>
-				I also used to play some chess (haters will call this nerdy), competing in tournaments and brushing up on tactics. I tried my hand again at chess recently in February 2020 for a team tournament, but if I want to be the next Magnus Carlsen, looks like I have <a href="http://www.uschess.org/msa/MbrDtlMain.php?16074170" class="text-link" target="_blank">a lot more to go...</a>
+				I also used to play some chess (haters will call this nerdy), competing in tournaments and brushing up on tactics. I tried my hand again at chess in February 2020 for a team tournament, but if I want to be the next Magnus Carlsen, looks like I have <a href="http://www.uschess.org/msa/MbrDtlMain.php?16074170" class="text-link" target="_blank">a lot more to go...</a>
 				<br><br>
 				Musically, I've been a drummer since middle school, and I even played in a rock band for a couple years in high school. Sadly, having a drumset in my apartment here would annoy my roommates and neighbors, so all I can do now is (sort of) beatbox or get lit through <a href="http://www.virtualdrumming.com/" class="text-link" target="_blank">virtual drums</a>.
 				<br><br>
@@ -330,7 +318,7 @@
 			<div class="text-block">
 				And that's the end! If you feel there's anything you need to let me know, whether it's some cool tech coming out, a job offer (wink wink), or a casual Clash Royale 2v2 battle, feel free to shoot me an email! I'll be sure to read and reply to them as soon as I can as long as you promise to make yourself not look like spam. 
 				<br><br>
-				<center><button class="contact">Email</button><br>
+				<center><button class="spoiler" id="contact">Email</button><br>
 				<span class="more-text">anthonyhsyu (at) berkeley (dot) edu</span></center>
 				<br>
 				You should also really check out my <a href="https://twitch.tv/lemonayyde" class="text-link" target="_blank">Twitch channel</a>! Last shameless plug before we wrap up :P
